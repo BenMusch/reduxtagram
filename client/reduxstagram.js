@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 
 // Import components
-import Main from './components/main'
+import Main from './components/Main'
 import Single from './components/Single'
 import PhotoGrid from './components/PhotoGrid'
 import store, { history } from './store'
