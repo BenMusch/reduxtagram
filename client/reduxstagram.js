@@ -8,6 +8,7 @@ import Main from './components/main'
 import Single from './components/Single'
 import PhotoGrid from './components/PhotoGrid'
 import store, { history } from './store'
+import App from './components/App'
 
 // Import css
 import css from './styles/style.styl'
@@ -15,7 +16,7 @@ import css from './styles/style.styl'
 const router = (
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={Main}>
+      <Route path="/" component={App}>
         <IndexRoute component={PhotoGrid}></IndexRoute>
         <Route path="/view/:postId" component={Single}></Route>
       </Route>
